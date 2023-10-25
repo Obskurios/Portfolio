@@ -1,6 +1,76 @@
-/*
-font-family: 'Maven Pro', sans-serif;
-font-family: 'Montserrat', sans-serif;
-font-family: 'Poppins', sans-serif;
-font-family: 'Roboto Mono', monospace;
-*/
+
+/*  VARIABLE CSS */
+    :root{
+        --header-height: 3rem;
+
+        /* KOLORY */
+        --hue-color: 283;
+
+        /* HSL Color Mode */
+        --first-color: hsl(var(--hue-color), 43%, 37%);
+        --first-color-second: hsl(var(--hue-color), 69%, 22%);
+        --first-color-alt: hsl(var(--hue-color), 45%, 59%);
+        --first-color-lighter: hsl(var(--hue-color), 45%, 81%);
+
+        --title-color: hsl(var(--hue-color), 78%, 100%);
+        --text-color: hsl(41, 91%, 42%);
+        --text-color-light: hsl(45, 91%, 66%);
+        --imput-color: hsl(45, 91%, 0%);
+        --body-color: hsl(283, 84%, 34%);
+        --container-color: #FFF;
+        --scroll-bar-color: hsl(46, 84%, 56%);
+        --scroll-thumb-color: hsl(48, 95%, 48%);
+        --gradient-color: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(153,32,191,1) 63%, rgba(143,31,168,1) 93%);
+
+        /* CZCIONKI */
+        --gulliable-font: 'Maven Pro', sans-serif;
+        --montserrat-font: 'Montserrat', sans-serif;
+        --body-font: 'Poppins', sans-serif;
+        --roboto-font: 'Roboto Mono', monospace;
+
+        /* 1rem = 16px */
+        --big-font-size: 2rem;
+        --h1-font-size: 1.5rem;
+        --h2-font-size: 1.25rem;
+        --h3-font-size: 1.125rem;
+        --noramal-font-size: 0.938rem;
+        --small-font-size : 0.813rem;
+        --smaller-font-size: 0.75rem;
+
+        /* FONT WEIGHT */
+        --font-mednium:500;
+        --font-semi-bold:600;
+        --font-bold:700;
+
+        /* Margin Size - Bottom */
+        /* .25rem= 4px */
+        --mb-0-25: 0.25rem;
+        --mb-0-5: 0.5rem;
+        --mb-0-75: 0.75rem;
+        --mb-1: 1rem;
+        --mb-1-25: 1.25rem;
+        --mb-1-5: 1.5rem;
+        --mb-2: 2rem;
+        --mb-2-5: 2.25rem
+        --mb-3: 3rem;
+
+        /* Z-INDEX */
+        --z-tooltip:10;
+        --z-fixed: 100;
+        --z-modal: 1000;
+
+    }
+
+    /* FONT SIZE FOR LARGE DIVICE */
+    @media screen and (min-width: 968px){
+        :root{
+            --big-font-size: 3rem;
+            --h1-font-size: 2.5rem;
+            --h2-font-size: 1.5rem;
+            --h3-font-size: 1.25rem;
+            --noramal-font-size: 1rem;
+            --small-font-size : 0.875rem;
+            --smaller-font-size: 0.813rem;
+        }
+        
+    }

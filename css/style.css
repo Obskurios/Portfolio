@@ -74,3 +74,121 @@
         }
         
     }
+
+    /* DARK COLOR */
+
+    body.dark-theme{
+        --first-color: hsl(var(--hue-color), 43%, 37%);
+        --first-color-second: hsl(var(--hue-color), 69%, 22%);
+        --first-color-alt: hsl(var(--hue-color), 45%, 59%);
+        --first-color-lighter: hsl(var(--hue-color), 45%, 81%);
+
+        --title-color: hsl(var(--hue-color), 78%, 100%);
+        --text-color: hsl(41, 91%, 42%);
+        --text-color-light: hsl(45, 91%, 66%);
+        --imput-color: hsl(45, 91%, 0%);
+        --body-color: hsl(283, 84%, 34%);
+        --container-color: #FFF;
+        --scroll-bar-color: hsl(46, 84%, 56%);
+        --scroll-thumb-color: hsl(48, 95%, 48%);
+    }
+
+    /* NAV BUTTONS DARK/LIGHT */
+
+    .nav_btns{
+        display: flex;
+        align-items: center;
+        padding-left: var(--mb-0-5);
+        margin: 0;
+        margin-top: -5px;
+    }
+
+    .change-theme{
+        font-size: 1.25rem;
+        color: var(--title-color);
+        margin-right: var(--mb-1);
+        cursor: pointer;
+    }
+
+    .change-theme:hover{
+        color:var(--first-color);
+    }
+
+    /* BASE */
+    *{
+        box-sizing: border-box;
+        padding: 0;
+        margin: 0;
+    }
+
+    html{
+        scroll-behavior: smooth;
+    }
+
+    body{
+        margin: 0 0 var(--header-height) 0;
+        font-family:  var(--body-font);
+        font-size: var(--noramal-font-size);
+        background-color: var(--body-color);
+    }
+
+    h1,h2,h3,h4{
+        color:var(--title-color);
+        font-weight: var(--font-semi-bold);
+    }
+
+    u1{
+        list-style: none;
+    }
+
+    a{
+        text-decoration: none;
+    }
+
+    img{
+        max-width: 100%;
+        height: auto;
+    }
+
+    /* REAUSABLE CSS CLASSES */
+
+    .section{
+        padding: 2rem 0 4rem;
+        margin: auto;
+
+    }
+
+    .section_title{
+        font-size: var(--big-font-size);
+        font-family: var(--roboto-font);
+    }
+
+    .section_subtitle{
+        display: block;
+        font-size: var(--small-font-size);
+        margin-bottom: var(--mb-2-5);
+    }
+    .section_title,
+    .section_subtitle{
+        text-align: center;
+    }
+
+    /* LAYOUT */
+
+    .container{
+        margin-right: var(--mb-1);
+    }
+
+    .grid{
+        display: grid;
+    }
+
+    .headeer{
+        width: 100%;
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        z-index: var(--z-fixed);
+        background-color: var(--body-color);
+    }
